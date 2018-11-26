@@ -36,7 +36,7 @@
    - Interface
 - Permet de compléter le garbage collector car :
 	- On ne sait pas quand il va se déclancher
-	- Le GB n'a aucune idée de certaines ressources comme des "windows handles", des fichiers ouverts, ou des diffusions.
+	- Le GB n'a aucune idée de certaines ressources comme des "windows handles" (gestionnaire), des fichiers ouverts, ou des diffusions.
 ````C#
 public class SampleClass : IDisposable
 {
@@ -127,8 +127,8 @@ Algorithmes :
     dynamic_ec.someMethod("some argument", 7, null);
     dynamic_ec.nonexistentMethod();
 ```
-###  Lambda
-    
+##  Lambda
+ - Introduite en C# dans la version 3.0 
 - Fonction anonyme utilisé pour :
 	- Créer des delegates
 	- Des types d'expression d'arbre
@@ -156,7 +156,7 @@ double division = Calcul((a, b) =>
 
 ###  Méthodes anonymes
    
-   - Introduite en C# dans la version 3.0
+   - Introduite en C# dans la version 2.0 
    - Instruction 'inline' qui peut être utilisée partout où un type délégué est attendu.
    - n'a pas de nom, n'a que de vie à cet endroit là
    - Très utile pour simplifier la synthaxe des délégués :
